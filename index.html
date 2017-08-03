@@ -11,13 +11,39 @@
 	    <link rel="stylesheet" href="css/css.css" media="Screen"/>
 	    <link rel="shortcut icon" href="icon.ico"/>
 
+        <!-- Style -->
+        <style>
+            #section_about {padding-top:50px;height:500px;color: #000000; background-color: #ffffff;}
+            #section_projects {padding-top:50px;height:500px;color: #ffffff; background-color: #000000;}
+            #section_contact {padding-top:50px;height:500px;color: #000000; background-color: #ffffff;}
+        </style>
+
         <title>Jonathan Chan</title>
     </head>
 
+
+
     <body data-spy="scroll" data-target=".navbar">
         <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Jonathan Chan</a>
+            </div>
             <h1>Hi, I'm <kbd>Jonathan</kbd>.</h1>
                 <p>I'm hosted with GitHub Pages.</p>
         </div>
+        <div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#section_about">About</a></li>
+              <li><a href="#section_projects">Projects</a></li>
+              <li><a href="#section_contact">Contact</a></li>
+            </ul>
+          </div>
+      </div>
     </body>
 </html>
