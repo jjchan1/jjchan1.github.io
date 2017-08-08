@@ -23,7 +23,9 @@
                 $('.html_css_bar').animate({width:'75%'}, 7000);
             });
         </script>
-
+        <script>
+            $('#blackOverlay').css('opacity',currentScrollTop/$('#blackOverlay').height());
+        </script>
         <!-- Style -->
         <style>
             #section_intro {
@@ -76,6 +78,15 @@
             a:visited {
                 color: gray;
             }
+            #blackOverlay{
+                background-color:#000;
+                opacity:0.0;
+                position:absolute;
+                top:0;
+                width:100%;
+                height:100%;
+            }
+
         </style>
 
         <title>Jonathan Chan</title>
