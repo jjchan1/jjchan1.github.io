@@ -16,20 +16,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script>
-        function fill_progress() {
-          var elem = document.getElementById("progress_bars");
-          var width = 0;
-          var id = setInterval(frame, 10);
-          function frame() {
-            if (width >= 100) {
-              clearInterval(id);
-            } else {
-              width++;
-            }
-          }
-        }
-        </script>
-        <script>
             $(document).ready(function(){
                 $('.java_bar').animate({width:'90%'}, 5000);
                 $('.ruby_bar').animate({width:'90%'}, 5500);
@@ -73,25 +59,13 @@
             #progress_bars {
                 background-color: #d2d2d2;
                 text-align: left;
-                /*animation-name: fill_progress;
-                animation-duration: 2s;
-                animation-timing-function: ease-in;
-                animation-iteration-count: infinite;*/
             }
-            /*@keyframes fill_progress {
-               0% { width: 0; }
-               25% { width: auto; }
-               50% { width: auto;}
-               75% { width: auto;}
-               100% { width: auto; }
-            }*/
             .complete_progress_bar {
               width:600px;
               height:5px;
               background:#ffffff;
               margin-bottom:5px;
             }
-
             .bar_progress {
               width:0%;
               height:100%;
@@ -164,8 +138,8 @@
                 </p>
             </font>
             <!-- Progress bars -->
-            <div class="w3-container" id="progress_bars">
-                <p>Java</p>
+            <div class="container-fluid" id="progress_bars">
+                Java
                 <div class="complete_progress_bar">
                     <div class="bar_progress java_bar"></div>
                 </div><br>
