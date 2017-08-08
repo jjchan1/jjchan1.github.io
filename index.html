@@ -15,6 +15,22 @@
         <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+        function fill_progress() {
+          var elem = document.getElementById("progress_bars");
+          var width = 0;
+          var id = setInterval(frame, 10);
+          function frame() {
+            if (width >= 100) {
+              clearInterval(id);
+            } else {
+              width++;
+              elem.style.width = width + '%';
+              elem.innerHTML = width * 1  + '%';
+            }
+          }
+        }
+        </script>
 
         <!-- Style -->
         <style>
