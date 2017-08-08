@@ -44,9 +44,15 @@
             #section_projects {
                 padding: 100px 20px 100px 20px;
                 color: #000000;
-                /*background-color: #d2d2d2;*/
-                background: linear-gradient(#d2d2d2, black);
+                background-color: #d2d2d2;
                 text-align: right;
+            }
+            #section_progress_bars {
+                padding: 0px 20px 0px 20px;
+                /*background-color: #d2d2d2;*/
+                color: #ffffff;
+                background: linear-gradient(#d2d2d2, black);
+                text-align: left;
             }
             #section_contact {
                 padding: 100px 20px 100px 20px;
@@ -59,11 +65,7 @@
             p.wide_space {
                 line-height: 2.0;
             }
-            #progress_bars {
-                padding: 0px 20px 0px 20px;
-                background-color: #d2d2d2;
-                text-align: left;
-            }
+
             .complete_progress_bar {
               width:60%;
               height:5px;
@@ -80,15 +82,6 @@
             a:visited {
                 color: gray;
             }
-            #blackOverlay{
-                background-color:#000;
-                opacity:0.0;
-                position:absolute;
-                top:0;
-                width:100%;
-                height:100%;
-            }
-
         </style>
 
         <title>Jonathan Chan</title>
@@ -154,7 +147,7 @@
                 </p>
             </font>
             <!-- Progress bars -->
-            <div class="container-fluid" id="progress_bars">
+            <div class="container-fluid" id="section_progress_bars">
                 Java
                 <div class="complete_progress_bar">
                     <div class="bar_progress java_bar"></div>
