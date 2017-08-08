@@ -85,6 +85,20 @@
                75% { width: auto;}
                100% { width: auto; }
             }*/
+            .complete_progress_bar {
+              width:600px;
+              height:5px;
+              background:#d2d2d2;
+              margin-bottom:5px;
+            }
+
+            .bar_progress {
+              width:0%;
+              height:100%;
+              background:#509CE8;
+            }
+
+
         </style>
 
         <title>Jonathan Chan</title>
@@ -151,10 +165,10 @@
             </font>
             <!-- Progress bars -->
             <div class="w3-container" id="progress_bars">
-                <p>Java
-                <div class="w3-light-grey">
-                    <div class="w3-blue java_bar" style="height:5px;width:90%"></div>
-                </div><br></p>
+                <p>Java</p>
+                <div class="complete_progress_bar">
+                    <div class="bar_progress java_bar"></div>
+                </div><br>
                 <p>Ruby</p>
                 <div class="w3-light-grey">
                     <div class="w3-blue ruby_bar" style="height:5px;width:90%"></div>
