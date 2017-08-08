@@ -42,13 +42,19 @@
                 background-color: #000000;
             }
             .logo {
-                padding-right: 20px}
+                padding-right: 20px
+            }
             p.wide_space {
                 line-height: 2.0;
             }
             #progress_bars {
                 background-color: #d2d2d2;
                 text-align: left;
+                animation: fill_progress 2s infinite;
+            }
+            @keyframes fill_progress {
+               0% { width: 0; }
+               100% { width: auto; }
             }
         </style>
 
