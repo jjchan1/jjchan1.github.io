@@ -27,14 +27,17 @@
 
         <!-- Style -->
         <style>
-            #section_intro {
-                padding: 400px 10% 400px 10%;
-                height: 1000px;
-                color: #000000;
-                /*background-color: #ffffff;*/
+            #section_mii {
+                height: 1200px;
                 background-image: url("images/mii_cropped.png");
                 background-repeat: no-repeat;
                 background-position: center;
+            }
+            #section_intro {
+                padding: 500px 10% 400px 10%;
+                height: 1000px;
+                color: #000000;
+                background-color: #ffffff;
                 text-align: center;
             }
             #section_about {
@@ -66,7 +69,12 @@
             }
             .text_container {
                 display: inline-block;
-                width: 500px;
+                width: 30%;
+            }
+            .bar_container {
+                display: inline-block;
+                width: 50%;
+                text-align: left;
             }
             #left.text_container {
                 text-align: left;
@@ -122,7 +130,7 @@
         <title>Jonathan Chan</title>
     </head>
 
-    <body data-spy="scroll" data-target=".navbar">
+    <body data-spy="scroll" data-target=".navbar" onload="window.scroll(0, 1700)">
         <!-- Navigation Bar -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
@@ -147,6 +155,10 @@
         </nav>
 
         <!-- Sections -->
+        <!-- Mii -->
+        <div id="section_mii" class="container-fluid">
+        </div>
+
         <!-- Intro -->
         <div id="section_intro" class="container-fluid">
             <p>
@@ -190,7 +202,7 @@
 
         <!-- Progress bars -->
         <div class="container-fluid" id="section_tools">
-            <div class="text_container" id="left">
+            <div class="bar_container">
                 <h2>Tools</h2>
                 Java
                 <div class="complete_progress_bar">
