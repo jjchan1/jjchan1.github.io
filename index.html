@@ -24,6 +24,11 @@
                 $('.html_css_bar').animate({width:'75%'}, 7000);
             });
         </script>
+        </script>
+            window.onload = function() {
+                document.getElementById('section_intro').scrollIntoView();
+            };
+        </script>
 
         <!-- Style -->
         <style>
@@ -33,7 +38,7 @@
                 padding: 275px 10% 500px 10%;
                 background-image: url("images/mii_cropped1.png");
                 background-repeat: no-repeat;
-                background-position: top;
+                background-position: center top;
                 background-size: auto 60%;
             }
             #section_intro {
@@ -134,7 +139,7 @@
         <title>Jonathan Chan</title>
     </head>
 
-    <body data-spy="scroll" data-target=".navbar" onload="window.scroll(0, 900)">
+    <body data-spy="scroll" data-target=".navbar">
         <!-- Navigation Bar -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
