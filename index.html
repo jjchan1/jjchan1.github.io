@@ -24,10 +24,16 @@
                 $('.html_css_bar').animate({width:'75%'}, 7000);
             });
         </script>
-        </script>
-            window.onload = function() {
-                document.getElementById('section_intro').scrollIntoView();
-            };
+        <script>
+            function findPos(obj) {
+                var curtop = 0;
+                if (obj.offsetParent) {
+                    do {
+                        curtop += obj.offsetTop;
+                    } while (obj = obj.offsetParent);
+                return [curtop];
+                }
+            }
         </script>
 
         <!-- Style -->
@@ -139,7 +145,7 @@
         <title>Jonathan Chan</title>
     </head>
 
-    <body data-spy="scroll" data-target=".navbar">
+    <body data-spy="scroll" data-target=".navbar" onload="window.scroll(0,findPos(document.getElementById("section_intro")))">
         <!-- Navigation Bar -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
