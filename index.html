@@ -58,6 +58,19 @@
                 color: #ffffff;
                 background-color: #000000;
             }
+            .container-fluid {
+                text-align: center;
+            }
+            .text_container {
+                display: inline-block;
+                width: 300px;
+            }
+            .text_container #left {
+                text-align: left;
+            }
+            .text_container #right {
+                text-align: right;
+            }
             #transition.container-fluid {
                 padding: 0px;
             }
@@ -141,15 +154,17 @@
 
         <!-- About -->
         <div id="section_about" class="container-fluid">
-            <h2>I'm a...</h2>
-            <p class="wide_space">
-                programmer<br>
-                biology nerd<br>
-                food lover<br>
-                powerlifting enthusiast<br>
-                biker<br>
-                DMV native<br>
-            </p>
+            <div class="text_container" id="left">
+                <h2>I'm a...</h2>
+                <p class="wide_space">
+                    programmer<br>
+                    biology nerd<br>
+                    food lover<br>
+                    powerlifting enthusiast<br>
+                    biker<br>
+                    DMV native<br>
+                </p>
+            </div>
         </div>
 
         <!-- Transition -->
@@ -159,37 +174,41 @@
 
         <!-- Projects -->
         <div id="section_projects" class="container-fluid">
-            <h2>Projects</h2>
-            <p class="wide_space">
-                An <a href="https://github.com/jjchan1/ApplicationSystem" target="_blank">application system</a><br>
-                A tip calculator<br>
-                A word guessing game<br>
-                An Uber for working out<br>
-            </p>
+            <div class="text_container" id="right">
+                <h2>Projects</h2>
+                <p class="wide_space">
+                    An <a href="https://github.com/jjchan1/ApplicationSystem" target="_blank">application system</a><br>
+                    A tip calculator<br>
+                    A word guessing game<br>
+                    An Uber for working out<br>
+                </p>
+            </div>
         </div>
 
         <!-- Progress bars -->
         <div class="container-fluid" id="section_tools">
-            <h2>Tools</h2>
-            Java
-            <div class="complete_progress_bar">
-                <div class="bar_progress java_bar"></div>
-            </div><br>
-            Ruby
-            <div class="complete_progress_bar">
-                <div class="bar_progress ruby_bar"></div>
-            </div><br>
-            C
-            <div class="complete_progress_bar">
-                <div class="bar_progress c_bar"></div>
-            </div><br>
-            Python
-            <div class="complete_progress_bar">
-                <div class="bar_progress python_bar"></div>
-            </div><br>
-            HTML & CSS
-            <div class="complete_progress_bar">
-                <div class="bar_progress html_css_bar"></div>
+            <div class="text_container" id="left">
+                <h2>Tools</h2>
+                Java
+                <div class="complete_progress_bar">
+                    <div class="bar_progress java_bar"></div>
+                </div><br>
+                Ruby
+                <div class="complete_progress_bar">
+                    <div class="bar_progress ruby_bar"></div>
+                </div><br>
+                C
+                <div class="complete_progress_bar">
+                    <div class="bar_progress c_bar"></div>
+                </div><br>
+                Python
+                <div class="complete_progress_bar">
+                    <div class="bar_progress python_bar"></div>
+                </div><br>
+                HTML & CSS
+                <div class="complete_progress_bar">
+                    <div class="bar_progress html_css_bar"></div>
+                </div>
             </div>
         </div>
 
@@ -200,20 +219,22 @@
 
         <!-- Contact -->
         <div id="section_contact" class="container_fluid">
-            <h3>Contact</h3>
-            <p class="wide_space">
-                Please feel free to contact me.<br>
-                I'd love to hear from you.<br>
-            </p>
-            <a href="mailto:jjchan1@gmail.com?Subject=Hi%20Jonathan">
-                <img class="logo" src="images/email.png" alt="Email">
-			</a>
-            <a href="https://github.com/jjchan1" target="_blank">
-                <img class="logo" src="images/GitHub-Mark-Light-64px.png" alt="Github">
-			</a>
-            <a href="https://www.linkedin.com/in/jonathanjchan/" target="_blank">
-                <img class="logo" src="images/In-White-66px-R.png" alt="LinkedIn">
-			</a>
+            <div class="text_container" id="left">
+                <h3>Contact</h3>
+                <p class="wide_space">
+                    Please feel free to contact me.<br>
+                    I'd love to hear from you.<br>
+                </p>
+                <a href="mailto:jjchan1@gmail.com?Subject=Hi%20Jonathan">
+                    <img class="logo" src="images/email.png" alt="Email">
+    			</a>
+                <a href="https://github.com/jjchan1" target="_blank">
+                    <img class="logo" src="images/GitHub-Mark-Light-64px.png" alt="Github">
+    			</a>
+                <a href="https://www.linkedin.com/in/jonathanjchan/" target="_blank">
+                    <img class="logo" src="images/In-White-66px-R.png" alt="LinkedIn">
+    			</a>
+            </div>
         </div>
     </body>
 </html>
