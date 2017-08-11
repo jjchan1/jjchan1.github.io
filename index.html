@@ -18,9 +18,9 @@
 
         <!-- Animate progress bars upon reaching Tools section -->
         <script>
-            $( window ).scroll(function() {
+            $(window).scroll(function() {
                     var scroll_position = $(document).scrollTop();
-                    var tool_position = find_position(document.getElementById('section_projects'));
+                    var tool_position = find_position(document.getElementById('section_tools'));
                     if (scroll_position >= tool_position) {
                         $('.java_bar').animate({width:'90%'}, 2000);
                         $('.ruby_bar').animate({width:'90%'}, 2500);
