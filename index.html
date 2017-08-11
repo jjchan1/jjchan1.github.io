@@ -8,8 +8,8 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	    <link rel="stylesheet" href="css/css.css" media="Screen"/>
-	    <link rel="shortcut icon" href="favicon_jc.ico"/>
+        <link rel="stylesheet" type="text/css" href="main.css" media="screen">
+        <link rel="shortcut icon" href="favicon_jc.ico"/>
         <link href='https://fonts.googleapis.com/css?family=Ubuntu Condensed' rel='stylesheet'>
 
         <!-- Scripts -->
@@ -19,15 +19,15 @@
         <!-- Animate progress bars upon reaching Tools section -->
         <script>
             $(window).scroll(function() {
-                    var scroll_position = $(document).scrollTop();
-                    var tool_position = find_position(document.getElementById('section_tools'));
-                    if (scroll_position >= tool_position) {
-                        $('.java_bar').animate({width:'90%'}, 2000);
-                        $('.ruby_bar').animate({width:'90%'}, 2500);
-                        $('.c_bar').animate({width:'85%'}, 3000);
-                        $('.python_bar').animate({width:'80%'}, 3500);
-                        $('.html_css_bar').animate({width:'75%'}, 4000);
-                    }
+                var scroll_position = $(document).scrollTop();
+                var tool_position = find_position(document.getElementById('section_tools'));
+                if (scroll_position >= tool_position) {
+                    $('.java_bar').animate({width:'90%'}, 2000);
+                    $('.ruby_bar').animate({width:'90%'}, 2500);
+                    $('.c_bar').animate({width:'85%'}, 3000);
+                    $('.python_bar').animate({width:'80%'}, 3500);
+                    $('.html_css_bar').animate({width:'75%'}, 4000);
+                }
             });
         </script>
 
@@ -43,113 +43,6 @@
                 }
             }
         </script>
-
-        <!-- Style -->
-        <style>
-            #section_mii {
-                height: 800px;
-                width: 100%;
-                padding: 275px 5% 500px 5%;
-                background-image: url("images/mii_cropped1.png");
-                background-repeat: no-repeat;
-                background-position: center top;
-                background-size: auto 60%;
-            }
-            #section_intro {
-                padding: 20% 5% 400px 5%;
-                height: 1000px;
-                color: #000000;
-                background-color: #ffffff;
-                text-align: center;
-            }
-            #section_about {
-                padding: 100px 5% 100px 5%;
-                color: #000000;
-                background: linear-gradient(white, #d2d2d2);
-            }
-            #section_projects {
-                padding: 100px 5% 100px 5%;
-                color: #000000;
-                background-color: #509CE8;
-                text-align: center;
-            }
-            #section_tools {
-                padding: 100px 5% 100px 5%;
-                color: #2445b8;
-                background-color: #d4b3ff;
-                text-align: center;
-                font-weight: bold;
-            }
-            #section_contact {
-                text-align: center;
-                padding: 100px 5% 100px 5%;
-                color: #ffffff;
-                background-color: #000000;
-            }
-            .container-fluid {
-                text-align: center;
-            }
-            .text_container {
-                display: inline-block;
-                width: 50%;
-            }
-            .bar_container {
-                display: inline-block;
-                width: 50%;
-                text-align: left;
-            }
-            #left.text_container {
-                text-align: left;
-            }
-            #right.text_container {
-                text-align: right;
-            }
-            #transition.container-fluid {
-                padding: 0px;
-            }
-            #transition img {
-                width: 100%;
-                min-height: 50px;
-            }
-            .logo {
-                padding-right: 10px;
-            }
-            p.wide_space {
-                line-height: 2.0;
-            }
-            .complete_progress_bar {
-              width:70%;
-              min-width: 200px;
-              height:5px;
-              background:#ffffff;
-            }
-            .bar_progress {
-              width:0%;
-              height:100%;
-              background:#64a871;
-            }
-            a:link {
-                color: blue;
-            }
-            a:visited {
-                color: gray;
-            }
-            h1 {
-                color: #000000;
-                font-size: 250%;
-            }
-            h2 {
-                color: #000000;
-                font-size: 150%;
-            }
-            h3 {
-                color: #ffffff;
-                font-size: 150%;
-            }
-            body {
-                font-family: 'Ubuntu Condensed';font-size: 24px;
-            }
-        </style>
 
         <title>Jonathan Chan</title>
     </head>
