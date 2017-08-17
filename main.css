@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto 60%;
+    text-decoration: none;
 }
 #section_intro {
     padding: 20% 5% 400px 5%;
@@ -93,11 +94,21 @@ h1 {
 h2 {
     color: #000000;
     font-size: 150%;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: orange;
 }
 h3 {
     color: #ffffff;
     font-size: 150%;
 }
+h4 {
+    color: #000000;
+    font-size: 150%;
+    font-weight: bold;
+}
+
 body {
     font-family: 'Ubuntu Condensed';font-size: 24px;
 }
