@@ -21,7 +21,7 @@
             $(window).scroll(function() {
                 var scroll_position = $(document).scrollTop();
                 var tool_position = find_position(document.getElementById('section_tools'));
-                if (scroll_position >= tool_position) {
+                if (scroll_position >= tool_position-200) {
                     $('.java_bar').animate({width:'90%'}, 2000);
                     $('.ruby_bar').animate({width:'90%'}, 2500);
                     $('.c_bar').animate({width:'85%'}, 3000);
